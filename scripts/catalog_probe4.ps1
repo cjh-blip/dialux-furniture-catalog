@@ -1,4 +1,4 @@
-# D:\tmp\catalog_probe4.ps1 - ScrollPattern 确定性扫掠 + 按钮 dump + 导入探查
+# scripts/catalog_probe4.ps1 - ScrollPattern 确定性扫掠 + 按钮 dump + 导入探查
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes
