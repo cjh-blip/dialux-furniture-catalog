@@ -4,7 +4,7 @@ import os, re, json, csv
 import olefile
 
 ROOT = r'<DIALux 安装目录>\Media\Furnitures\M3D'
-data = json.load(open(r'D:\tmp\m3d_dims.json', encoding='utf-8'))
+data = json.load(open(r'm3d_dims.json', encoding='utf-8'))
 
 def parse_texts(raw: bytes):
     """自校验步进：读 [len][utf8 text][00] 模式"""
@@ -40,7 +40,7 @@ for rec in data:
     if ns != rec.get('names'):
         fixed += 1
     rec['names'] = ns
-json.dump(data, open(r'D:\tmp\m3d_dims.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+json.dump(data, open(r'm3d_dims.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print('names updated for', fixed, 'files')
 
 # 抽样验证
