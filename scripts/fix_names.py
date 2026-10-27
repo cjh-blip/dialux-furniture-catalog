@@ -3,7 +3,7 @@
 import os, re, json, csv
 import olefile
 
-ROOT = r'D:\dev\DIAL GmbH\DIALux\Media\Furnitures\M3D'
+ROOT = r'<DIALux 安装目录>\Media\Furnitures\M3D'
 data = json.load(open(r'D:\tmp\m3d_dims.json', encoding='utf-8'))
 
 def parse_texts(raw: bytes):
