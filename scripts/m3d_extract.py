@@ -6,7 +6,7 @@ import os, re, json, sys
 import olefile
 
 ROOT = r'<DIALux 安装目录>\Media\Furnitures\M3D'
-OUT = r'D:\tmp\m3d_dims.json'
+OUT = r'm3d_dims.json'
 
 PT = re.compile(rb'point\s+\S+\s+([-\d.eE+]+)\s+([-\d.eE+]+)\s+([-\d.eE+]+)')
 TXT = re.compile(rb'[\x20-\x7e\xc2-\xf4][\x20-\x7e\x80-\xbf]{4,}')
