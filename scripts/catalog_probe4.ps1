@@ -124,7 +124,7 @@ $uiData.GetEnumerator() | ForEach-Object { }
 # 存 JSON（数组形式）
 $obj = @{}
 foreach ($k in $uiData.Keys) { $obj[$k] = @($uiData[$k]) }
-$obj | ConvertTo-Json -Depth 4 | Out-File 'D:\tmp\ui_categories.json' -Encoding utf8
+$obj | ConvertTo-Json -Depth 4 | Out-File 'ui_categories.json' -Encoding utf8
 
 Log ""
 Log "=== 按钮全量 dump ==="
@@ -139,5 +139,5 @@ foreach ($b in $btns) {
   $bi++
 }
 
-$out | Out-File -FilePath 'D:\tmp\catalog_probe4_out.txt' -Encoding utf8
+$out | Out-File -FilePath 'catalog_probe4_out.txt' -Encoding utf8
 Write-Output "DONE"
