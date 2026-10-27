@@ -2,10 +2,10 @@
 """生成 05g 交付物：主清单 md + UI 条目清单 md"""
 import json, re, os
 
-DIR = r'D:\homework\plan\03_Resources\references\试用记录_20261003'
-disk = json.load(open(r'D:\tmp\m3d_dims.json', encoding='utf-8'))
-ui = json.load(open(r'D:\tmp\ui_categories.json', encoding='utf-8'))
-frag = open(r'D:\tmp\moebel_md.txt', encoding='utf-8').read()
+DIR = r'试用记录_20261003'
+disk = json.load(open(r'm3d_dims.json', encoding='utf-8'))
+ui = json.load(open(r'ui_categories.json', encoding='utf-8'))
+frag = open(r'moebel_md.txt', encoding='utf-8').read()
 
 CN = {
  'Moebel': '家具', 'Shop': '商铺/店面', 'Gebaeude': '建筑', 'Verkehrseinrichtungen': '交通设施',
