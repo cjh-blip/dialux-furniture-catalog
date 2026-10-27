@@ -2,7 +2,7 @@
 """重生成 Moebel 片段 + CSV（清洁名称列：ASCII 首选 + 中文附注）"""
 import os, re, json, csv
 
-ROOT = r'D:\dev\DIAL GmbH\DIALux\Media\Furnitures\M3D'
+ROOT = r'<DIALux 安装目录>\Media\Furnitures\M3D'
 data = json.load(open(r'D:\tmp\m3d_dims.json', encoding='utf-8'))
 cjk = re.compile(r'[\u4e00-\u9fff]')
 ascii_re = re.compile(r'^[\x20-\x7e]{4,}$')
